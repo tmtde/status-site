@@ -3,58 +3,34 @@ layout: default
 title: TMT Status Page
 ---
 
-<header role="banner">
-	<div class="content">
-    	<div class="boxsocial">
-			<a href="https://www.tmt.de" target="_blank">Website</a>
-			<a href="https://www.tmt.de/unternehmen/aktuelles/" target="_blank">Aktuelles</a>
-			<a href="https://www.facebook.com/TMTde" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
-			<a href="https://twitter.com/tmtde" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
-			<a href="{{ site.baseurl }}/atom.xml" target="_blank"><i class="fa fa-fw fa-rss"></i></a>
-		</div>
-		<div class="boxlogo lfloat">
-			<img src="tmt-logo.svg" alt="TMT" class="logo">
-		</div>
-	</div>
-</header>
-<main>
-    <section id="section-info">
-        <div class="content">
-            <div class="well">
-                <i class="fa fa-info-circle fa-2x"></i>
-                <h1>TMT Status Page</h1>
-                <p class="text-small">This is the status page of TMT GmbH & Co. KG. In case of service interruptions we will keep you informed here.</p>
-            </div>
-        </div>
-    </section>
-	<section>
-    	<div class="content">
-            <div class="posts">
-        		{% for post in site.posts %}
-        		<div class="post">
-            		<div class="state">
-                		<i class="fa fa-{{ post.fa }}" aria-hidden="true"></i>
-            		</div>
-        			<div class="boxdatetime">
-        				<span class="date">{{ post.date | date_to_long_string }}</span>
-        				<span class="time">{{ post.time }}</span>
-        			</div>
-                    <h3 class="boxtitle" title="{{ post.title }}">
-        			    {{ post.title }}
-        			</h3>
-        			<div class="boxcontent">
-        			    {{ post.content }}
-        			</div>
-        		</div>
-        	  	{% endfor %}
-        	</div>
-    	</div>
-	</section>
-</main>
-<footer>
-	<div class="content">
-    	<p class="text-center">© TMT GmbH & Co. KG ❘ Phone: +49 921 507200-0 ❘ Fax: +49 921 507200-299 ❘ Email: net(at)tmt.de | <a href="https://www.tmt.de/kontakt/impressum/" target="_blank">Impressum</a> | <a href="https://www.tmt.de/kontakt/datenschutz/" target="_blank">Datenschutz</a></p>
+<section id="section-info">
+  <div class="content">
+    <div class="well">
+      <i class="fa fa-info-circle fa-2x"></i>
+      <h1>TMT Status Page</h1>
+      <p class="text-small">
+        This is the status page of TMT GmbH & Co. KG. In case of service
+        interruptions we will keep you informed here.
+      </p>
     </div>
-</footer>
-
-
+  </div>
+</section>
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <div class="state">
+      <i class="fa fa-{{ post.fa }}" aria-hidden="true"></i>
+    </div>
+    <div class="boxdatetime">
+      <span class="date">{{ post.date | date_to_long_string }}</span>
+      <span class="time">{{ post.time }}</span>
+    </div>
+    <h3 class="boxtitle" title="{{ post.title }}">
+      {{ post.title }}
+    </h3>
+    <div class="boxcontent">
+      {{ post.content }}
+    </div>
+  </div>
+  {% endfor %}
+</div>
