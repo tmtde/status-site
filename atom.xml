@@ -1,25 +1,25 @@
 ---
-layout: feed
+
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>NMS RSS</title>
-	<link href="http://status.netways.de/atom.xml" rel="self"/>
-	<link href="http://status.netways.de/blog"/>
+	<title>TMT Status RSS</title>
+	<link href="{{ site.url }}/atom.xml" rel="self"/>
+	<link href="{{ site.url }}"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://storagegirl.github.io/blog</id>
+	<id>https://tmtde.github.io/status-site</id>
 	<author>
-		<name>Nicole Lang</name>
-		<email>nicole.langb@storagegirl.de</email>
+		<name>TMT Status Page</name>
+		<email>net@tmt.de</email>
 	</author>
 
 	{% for post in site.posts %}
 		<entry>
 			<title>{{ post.title }}</title>
-			<link href="http://status.netways.de{{ post.url }}"/>
+			<link href="{{ post.url | prepend:site.url }}"/>
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
-			<id>http://status.netways.de{{ post.id }}</id>
+			<id>{{ post.id | prepend:site.url }}</id>
 			<content type="html">{{ post.content | xml_escape }}</content>
 		</entry>
 	{% endfor %}
