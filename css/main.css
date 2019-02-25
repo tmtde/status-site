@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   display: block;
   width: 100%;
   height: 100%;
@@ -6,33 +7,33 @@ html, body {
 
 html {
   min-height: 100%;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #1b1b1b;
 }
-
 
 html * {
   padding: 0;
   margin: 0;
-  font-size: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #1b1b1b;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
   color: #0069b4;
   font: inherit;
   text-decoration: none;
-  -webkit-transition: opacity .3s ease;
-     -moz-transition: opacity .3s ease;
-      -ms-transition: opacity .3s ease;
-          transition: opacity .3s ease;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 i {
@@ -51,7 +52,7 @@ i {
 }
 
 .fa-check {
-  background: #7ED321;
+  background: #7ed321;
 }
 
 .fa-exclamation-triangle {
@@ -78,14 +79,15 @@ i {
   width: 100%;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 100%;
 }
 
 /* Header styles */
 
 header {
-  height: 140px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -114,7 +116,7 @@ main .content {
 
 .post {
   border-bottom: 1px solid #ddd;
-  padding: .5em 0;
+  padding: 0.5em 0;
   padding-left: 36px;
   position: relative;
 }
@@ -127,7 +129,8 @@ main .content {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 1.75em; left: .25em;
+  top: 1.75em;
+  left: 0.25em;
 }
 
 .post > .state > i {
@@ -142,7 +145,7 @@ main .content {
 .content {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 2em;
 }
 
 /* Footer styles */
@@ -161,18 +164,16 @@ footer > .content {
 }
 
 footer > .content > p {
-  font-size: .857em;
+  font-size: 0.857em;
 }
 
 /* END Footer styles */
 
 /* -- */
 
-
 table {
-  font: inherit;
-  color: inherit;
   vertical-align: top;
+  color: #555;
 }
 
 th {
@@ -183,7 +184,7 @@ th {
 }
 
 td {
-  font-size: .857em;
+  font-size: 0.857em;
   vertical-align: top;
 }
 
@@ -192,44 +193,43 @@ p {
 }
 
 #containerheader {
-    margin:auto;
+  margin: auto;
 }
 
 #containerbody {
-    margin:auto;
-}
-
-.boxlogo {
-    width: 250px;
+  margin: auto;
 }
 
 .logo {
-  max-height: 75px;
+  height: 75px;
   width: auto;
-  margin-top: -10px;
+}
+
+.logo a {
+  display: inline-block;
 }
 
 .boxsocial {
-    text-align: right;
+  text-align: right;
 }
 
 .boxsocial a {
   display: inline-block;
   margin-top: 10px;
-  margin-right: 1em;
-  font-size: .857em;
+  margin-left: 1em;
+  font-size: 0.857em;
 }
 
 .boxheader {
-    clear: left;
-    text-align: left;
-    padding-top: 10px;
-    width: 100%;
+  clear: left;
+  text-align: left;
+  padding-top: 10px;
+  width: 100%;
 }
 
 .boxdatetime {
-  font-size: .857em;
-  color: #9B9B9B;
+  font-size: 0.857em;
+  color: #9b9b9b;
 }
 
 .boxdatetime span {
@@ -237,7 +237,7 @@ p {
   font-size: 1em;
   color: inherit;
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 
 .boxdatetime span:last-child {
@@ -246,12 +246,20 @@ p {
 
 h3.boxtitle {
   font-weight: bold;
-  padding: .25em 0;
+  padding: 0.25em 0;
   max-width: 100%;
 }
 
 .boxcontent {
-    color: #9B9B9B;
+  color: #9b9b9b;
+}
+
+.boxcontent tbody td:first-of-type {
+  font-weight: bold;
+}
+
+.boxcontent tbody td:first-of-type {
+  padding-right: 0.5rem;
 }
 
 /* Utils */
@@ -259,7 +267,7 @@ h3.boxtitle {
 .post:after,
 .content:after,
 .clearfix:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -283,28 +291,52 @@ h3.boxtitle {
 }
 
 .text-small {
-  font-size: .857em;
+  font-size: 0.857em;
 }
 
 /* END Utils */
 
 .well {
-  display: table;
-  width: 75%;
   background: #f5f5f5;
   position: relative;
-  padding: .5em;
+  padding: 0.5em;
   padding-left: 3.5em;
-  border-radius: .33rem;
-  margin: 1.5em auto;
+  border-radius: 0.33rem;
+}
+
+#section-info .well {
+  margin-bottom: 2em;
 }
 
 #section-info .well > i.fa,
-.well > i.fa {
+.well > i.fa  {
   display: block;
   position: absolute;
-  left: .5em;
-  top: .5rem;
+  left: 0.5em;
+  top: 0.5rem;
   color: gray;
 }
 
+@media (max-width: 767px) {
+  .boxsocial,
+  .boxlogo {
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: 15px;
+  }
+
+  main .content {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .boxcontent tbody td {
+    display: block;
+  }
+
+  .boxcontent tbody td:last-of-type {
+    margin-bottom: 0.5rem;
+  }
+}
