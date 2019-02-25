@@ -6,8 +6,8 @@ time: "[HH:MM am|pm] Europe/Berlin"
 fa: "clock-o"
 ---
 
-|                   |   |                                                                      |
-|-------------------|---|----------------------------------------------------------------------|
-| Systems:          |   | [NAME]                                                               |
-| Affected:         |   | Customers of [NAME]                                                  |
-| Update:           |   | [INFO]                                                               |
+|                   |                                                                      |
+|-------------------|----------------------------------------------------------------------|
+| Systems:          | [NAME]                                                               |
+| Affected:         | Customers of [NAME]                                                  |
+| Update:           | [INFO]                                                               |
