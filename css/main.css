@@ -190,6 +190,25 @@ td {
 
 p {
   text-align: left;
+  padding-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+}
+
+.posts h1,
+.posts h2,
+.posts h3,
+.posts h4,
+.posts h5,
+.posts h6 {
+  margin-bottom: 0;
 }
 
 #containerheader {
