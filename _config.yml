@@ -1,5 +1,6 @@
-name: NETWAYS Managed Services GmbH
+name: TMT GmbH & Co. KG Status
 markdown: kramdown
 permalink: /:year/:month/:day/:title
+baseurl: /status-site
 
 theme: jekyll-theme-tactile

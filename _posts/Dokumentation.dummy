@@ -22,11 +22,11 @@
 
 # Die Tabellen müssen immer folgendes Format haben (Anzahl Leerzeichen bzw. Bindestriche ist egal):
 
-    |         |   |              |
-    |---------|---|--------------|
-    |         |   |              |
-    |         |   |              |
-    |         |   |              |
+    |         |              |
+    |---------|--------------|
+    |         |              |
+    |         |              |
+    |         |              |
 
 # Alles Weitere z. B. Formatierung und Veröffentlichung werden von github und Jekyll übernommen.
 
