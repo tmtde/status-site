@@ -1,6 +1,6 @@
 name: TMT GmbH & Co. KG Status
 markdown: kramdown
 permalink: /:year/:month/:day/:title
-baseurl: /status-site
+baseurl: /
 
 theme: jekyll-theme-tactile
